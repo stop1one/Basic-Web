@@ -5,19 +5,36 @@
     <title>My first web</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <style>
+        ol{
+            border-right: 0;
+        }
+    </style>
 </head>
 
-<body>
+<body style="">
 
     <h1>
         <a href="web.html">WEB</a>
     </h1>
     <div id="grid">
-        <ol>
-            <li><a href="html.html">HTML</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li><a href="javascript.html">JavaScript</a></li>
-        </ol>
+        <div id="list">
+            <ol>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+            </ol>
+            <div id="buttons">
+                <input type="button" value="night" onclick="
+                    document.querySelector('body').style.backgroundColor = 'black';
+                    document.querySelector('body').style.color = 'white';
+                ">
+                <input type="button" value="day" onclick="
+                    document.querySelector('body').style.backgroundColor = 'white';
+                    document.querySelector('body').style.color = 'black';
+                ">
+            </div>
+        </div>
         <div id="article">
             <h2>JavaScript</h2>
             <p>

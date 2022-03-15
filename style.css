@@ -21,6 +21,16 @@ ol {
     display:grid;
     grid-template-columns: 150px 1fr;
 }
+#list{
+    display:block;
+    border-right:1px solid gray;
+}
+#buttons{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+    text-align: center;
+}
 #grid ol{
     padding-left:33px;
 }
@@ -47,6 +57,12 @@ ol {
     h2{
         margin:0px;
         margin-top:10px;
+    }
+    #buttons{
+        border-top: 0;
+        border-bottom: 0;
+        padding: 15px;
+        text-align: left;
     }
     #article{
         padding-left:16px;
